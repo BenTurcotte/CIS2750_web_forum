@@ -3,16 +3,9 @@ This web forum was developed for the CIS2750 class at the university of Guelph. 
 ---
 ### Description
 
-This is a revised version of assignment 3. Instead of storing working data in
-  a messy cluster of files, it now uses SQL to access the
-  dursley.socs.uoguelph.ca database. That database is used for storing all
-  user, stream, and post data that was previously found in the aforementioned
-  collection of text files.
+This is a revised version of assignment 3. Instead of storing working data in a messy cluster of files, it now uses SQL to access the dursley.socs.uoguelph.ca database. That database is used for storing all user, stream, and post data that was previously found in the aforementioned collection of text files.
 
-The db program is the largest addition to this system. It is used by the other
-  programs (addauthor, post, view.py) as an interface for retrieving data from
-  the database. It can also be used on its own as a command line tool to perform
-  basic SQL queries.
+The db program is the largest addition to this system. It is used by the other programs (addauthor, post, view.py) as an interface for retrieving data from the database. It can also be used on its own as a command line tool to perform basic SQL queries.
 
 __Pages__:
 - home
@@ -35,23 +28,19 @@ __Pages__:
 ---
 ### How to Run (db)
   
-  `$ make`
-  `$ ./db <flag>`
+`$ make`
+`$ ./db <flag>`
   
-  replace `<flag>` with:
-    From a4 spec:
-      `-streams :` prints all stream names stores in database.
-      `-users   :` prints all usernames stored in database.
-      `-posts   :` prints all posts (messages) stored in database.
-      `-clear   :` deletes all records from every table in the database.
-      `-reset   :` drops all tables on the database.
-    Custom commands:
-      `-add <username> <streamname1> <streaname2>` ... (not comma separated)
-               : adds username, streamname to the 'users' table
-      `-remove <username> <streamname1> <streaname2>` ... (not comma separated)
-               : removes username, streamname to the 'users' table
-      `-post <username> <streamname> "<message>"`
-               : adds username, streamname, message to the 'messages' table
+__replace `<flag>` with__:  
+      `-streams :` prints all stream names stores in database.  
+      `-users   :` prints all usernames stored in database.  
+      `-posts   :` prints all posts (messages) stored in database.  
+      `-clear   :` deletes all records from every table in the database.  
+      `-reset   :` drops all tables on the database.  
+__Custom flags__:  
+`-add <username> <streamname1> <streaname2> ...    `: adds username, streamname to the 'users' table  
+`-remove <username> <streamname1> <streaname2> ... `: removes username, streamname to the 'users' table 
+`-post <username> <streamname> "<message>"         `: adds username, streamname, message to the 'messages' table  
 
 ---
 ### How to Run (message-board system)
@@ -61,13 +50,13 @@ in command line, type the following:
 
 go to "/your/testing/folder/index.php" on the web browser of your choice
 
-To use a different wpml file as the first page to be loaded:
-- Go into my "Makefile".
-- Change the value of "IN" to the name of the file you would like to use.
-- Type "make" on commandline.
-  - or type make IN=your_test_file.wpml
-- View my index.php file in your web browser.
-- The converted code from your wpml file will be displayed as a webpage.
+To use a different wpml file as the first page to be loaded:  
+- Go into my "Makefile".  
+- Change the value of "IN" to the name of the file you would like to use.  
+- Type "make" on commandline.  
+  - or type make IN=your_test_file.wpml . 
+- View my index.php file in your web browser.  
+- The converted code from your wpml file will be displayed as a webpage.  
 
 ---
 ### Known Limitations

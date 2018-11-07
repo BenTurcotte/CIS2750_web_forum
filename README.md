@@ -83,25 +83,22 @@ __db__:
   -remove
   -post
 
-__config_parser__:
-- It is expected that:
-  - every quptation mark will have a corresponding end quote
-  - every open bracket has a corresponding closing bracket
-  - closing quotes & closing brackets are found on the same line as their
-    counterparts
-  - a string literal will not contain a string literal within it
-- Anything inside the brackets of an element that is not a defined property &
-  is not a comma is passed through the parser verbatim
-- The location of insertion of the extra content (if any is found) is dependent
-  on which element tag it belongs to
-  .d -- extra content added after <hr /> tag
-  .b -- extra content added inside form between submit button & </form> tag
-  .e -- extra content added after execution before the ?> php closing tag
-  .h -- extra content added after text & before header closing tag
-  .i -- extra content added after last input field, before 'submit' input tag
-  .l -- extra content added inside link tag: <a ... HERE ... href=...>text</a>
-  .p -- extra content added in same relative location as link tag
-  .r -- extra content added between last radio button & submit button
-  .t -- extra content added outside of (after) the <p> ... </p> paragraph tags
+__config_parser__:  
+- It is expected that:  
+  - every quptation mark will have a corresponding end quote  
+  - every open bracket has a corresponding closing bracket  
+  - closing quotes & closing brackets are found on the same line as their counterparts  
+  - a string literal will not contain a string literal within it  
+- Anything inside the brackets of an element that is not a defined property & is not a comma is passed through the parser verbatim  
+- The location of insertion of the extra content (if any is found) is dependent on which element tag it belongs to  
+  `.d` : extra content added after `<hr />` tag  
+  `.b` : extra content added inside form between submit button & `</form>` tag  
+  `.e` : extra content added after execution before the `?>` php closing tag  
+  `.h` : extra content added after text & before header closing tag  
+  `.i` : extra content added after last input field, before 'submit' input tag  
+  `.l` : extra content added inside link tag: `<a ... HERE ... href=...>text</a>`  
+  `.p` : extra content added in same relative location as link tag  
+  `.r` : extra content added between last radio button & submit button  
+  `.t` : extra content added outside of (after) the `<p> ... </p>` paragraph tags  
 
 ---

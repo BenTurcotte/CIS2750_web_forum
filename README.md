@@ -26,29 +26,29 @@ __Pages__:
     separated list)
 
 ---
-### How to Run (db)
+### How to Run (db)  
   
-`$ make`
-`$ ./db <flag>`
+`$ make`  
+`$ ./db <flag>`  
   
 __replace `<flag>` with__:  
-      `-streams :` prints all stream names stores in database.  
-      `-users   :` prints all usernames stored in database.  
-      `-posts   :` prints all posts (messages) stored in database.  
-      `-clear   :` deletes all records from every table in the database.  
-      `-reset   :` drops all tables on the database.  
+      `-streams` : prints all stream names stores in database.  
+      `-users`   : prints all usernames stored in database.  
+      `-posts`   : prints all posts (messages) stored in database.  
+      `-clear`   : deletes all records from every table in the database.  
+      `-reset`   : drops all tables on the database.  
 __Custom flags__:  
-`-add <username> <streamname1> <streaname2> ...    `: adds username, streamname to the 'users' table  
-`-remove <username> <streamname1> <streaname2> ... `: removes username, streamname to the 'users' table 
-`-post <username> <streamname> "<message>"         `: adds username, streamname, message to the 'messages' table  
+`-add <username> <streamname1> <streaname2> ...` : adds username, streamname to the 'users' table  
+`-remove <username> <streamname1> <streaname2> ...` : removes username, streamname to the 'users' table 
+`-post <username> <streamname> "<message>"` : adds username, streamname, message to the 'messages' table  
 
 ---
 ### How to Run (message-board system)
 
-in command line, type the following:
-  `$ make`
+in command line, type the following:  
+  `$ make`  
 
-go to "/your/testing/folder/index.php" on the web browser of your choice
+go to "/your/testing/folder/index.php" on the web browser of your choice  
 
 To use a different wpml file as the first page to be loaded:  
 - Go into my "Makefile".  
